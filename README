@@ -1,0 +1,16 @@
+* 17 pwm channels are available on Colibri Vybrid50
+
+Compile the driver source using the Make file in the driver source directory, copy the kernel object obtained (mvf-pwm.ko) to Colibri-VF50 board.
+
+Import the Eclipse project of demo application and bild the project, copy the demo application (mvf-pwm-demo) to Colibri-VF50 board.
+
+/* ON COLIBRI EVALUATION BOARD V3.1a */ 							
+Load the kernel object using :
+insmod mvf-pwm.ko
+
+check the debug messages.
+
+Run the mvf-pwm-demo application.
+
+The demo application is just for controlling a serveo motor on one channel and an led on other channel.
+
